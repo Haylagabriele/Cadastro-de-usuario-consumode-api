@@ -10,6 +10,6 @@ app.use(bodyParser.json())
 // essa aplicação é para que ele entenda que o pacote que ele está recebendo parametros via URL
 app.use(bodyParser.urlencoded({extended: false }));
 
-require('./controller/authController')(app);
+require('./app/controller/index')(app);
 //Porta que queremos ouvir
 app.listen(3000);
